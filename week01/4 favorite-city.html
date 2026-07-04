@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>world's backpackers</title>
+</head>
+
+<body>
+    <header>
+        <h1>Machu Picchu</h1>
+    </header>
+
+    <p> Machu Picchu, located about 100 kilometers from Cusco, is one of the Seven Wonders
+        of the World and Peru's most famous archaeological site. Built by the Incas
+        in the 15th century and rediscovered in 1911, it is known for its well-preserved
+        ruins, breathtaking mountain setting, andremarkable structures such as
+        the Temple of the Sun and the Intihuatana stone.</p>
+
+    <img id="machu-pichu-photo" alt="a colorfull Machu Pichu mountain" width="500">
+
+    <script>
+        // Divide the long URL into clean, readable pieces
+        const urlParts = [
+            "https://upload.wikimedia.org/",
+            "wikipedia/commons/c/ca/",
+            "Machu_Picchu%2C_Peru_%282018%29.jpg"
+        ];
+
+        // Join the pieces together with no spaces and inject it into the image
+        document.getElementById("machu-pichu-photo").src = urlParts.join('');
+    </script>
+
+</body>
+
+</html>
