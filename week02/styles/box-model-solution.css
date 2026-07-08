@@ -15,7 +15,6 @@
     background-color: #bbb;
     width: 100px;
     height: auto;
-
 }
 
 blockquote {
@@ -27,5 +26,5 @@ cite {
     border-top: 1px dotted #fff;
     padding-top: 3px;
     text-align: right;
-    font-size: smaller;
+    font-size: small;
 }
