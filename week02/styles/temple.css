@@ -1,0 +1,53 @@
+body {
+    height: 0px;
+    margin: 0px;
+    display: grid;
+    place-items: center;
+}
+
+footer p,
+header p {
+    display: block;
+    width: 400px;
+    margin: 5px;
+    border: 0px;
+    padding: 10px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-size: medium;
+
+}
+
+h1 {
+    display: block;
+    width: 400px;
+    margin: 5px;
+    border: none;
+    padding: 1px;
+    color: black;
+    text-align: center;
+    font-style: normal;
+    font-size: x-large;
+
+}
+
+.temple-image img {
+    text-align: center;
+    width: 200px;
+    height: auto;
+}
+
+p,
+section {
+    display: block;
+    font-size: small;
+}
+
+h2 {
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+ul {}
