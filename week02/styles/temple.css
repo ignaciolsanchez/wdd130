@@ -1,14 +1,17 @@
-body {
-    height: 0px;
-    margin: 0px;
+div {
     display: grid;
     place-items: center;
 }
 
-footer p,
+body {
+    height: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header p {
     display: block;
-    width: 400px;
+    width: 420px;
     margin: 5px;
     border: 0px;
     padding: 10px;
@@ -23,7 +26,7 @@ header p {
 h1 {
     display: block;
     width: 400px;
-    margin: 5px;
+    margin: 0px;
     border: none;
     padding: 1px;
     color: black;
@@ -35,19 +38,51 @@ h1 {
 
 .temple-image img {
     text-align: center;
-    width: 200px;
+    margin: 10px;
+    border: none;
+    padding: none;
+    width: 250px;
     height: auto;
+    box-shadow: 0 0 30px black;
 }
 
-p,
 section {
     display: block;
-    font-size: small;
+    max-width: 236px;
+    font-size: 10px;
+    line-height: 1.6;
+    border: 1px solid rgb(195, 195, 195);
+    background-color: rgb(224, 223, 223);
+    margin: 7px;
+    padding: 5px;
+    text-align: left;
 }
 
 h2 {
     display: block;
     border-bottom: 1px solid black;
+    margin-left: 5px;
+    padding: 1px;
 }
 
-ul {}
+.section-one p {
+    margin: 10px 15px;
+    padding: 1px;
+}
+
+.section-two ul {
+    padding: 0px 20px;
+}
+
+footer p {
+    display: block;
+    width: 420px;
+    margin: 10px;
+    border: 0px;
+    padding: 10px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-size: small;
+}
