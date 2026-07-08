@@ -35,13 +35,6 @@ aside {
     text-align: center;
 }
 
-h2 {
-    width: 0;
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
 aside img {
     width: 200px;
     height: auto;
