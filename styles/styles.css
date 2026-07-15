@@ -1,12 +1,24 @@
+:root {
+    --background-color: rgb(102, 0, 78);
+    --color-text-background: white;
+
+    --border-img: 1px solid black;
+    --padding-img: 1px;
+    --box-img-shadow: 0 0 30px gray;
+    --background-img-color: white;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--background-color);
     padding: 10px;
+    display: flex;
 }
 
 nav a {
-    color: white;
+    color: var(--color-text-background);
     display: block;
     padding: 20px;
+
 }
 
 main {
@@ -14,33 +26,35 @@ main {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--background-color);
 }
 
 main img {
     width: 200px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border-img);
+    padding: var(--padding-img);
+    box-shadow: var(--box-img-shadow);
+    background-color: var(--background-img-color);
 }
 
 aside {
     width: 320px;
     margin: 16px;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: var(--border);
     padding: 16px;
-    background-color: darkblue;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--color-text-background);
     text-align: center;
 }
 
 aside img {
     width: 200px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border-img);
+    padding: var(--padding-img);
+    box-shadow: var(--box-img-shadow);
+    background-color: var(--background-img-color);
 }
 
 p {
@@ -49,6 +63,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border-img);
     text-align: center;
 }
