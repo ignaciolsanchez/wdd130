@@ -1,8 +1,8 @@
 :root {
     --primary-color: #e78523;
-    --secundary-color: #97f461;
+    --secundary-color: #ffffff;
     --accent1-color: #264653;
-    --accent2-color: #e56ae9;
+    --accent2-color: #000000;
     --heading-font: "Times new roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -103,7 +103,7 @@ header img {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secundary-color);
 }
 
 .hero article {
@@ -115,7 +115,7 @@ header img {
     border: 1px solid rgb(156, 86, 0);
     padding: 16px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--secundary-color);
 }
 
 span {
@@ -141,15 +141,15 @@ section h2 {
     border: 1px solid var(--accent1-color);
     padding: 16px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--secundary-color);
 }
 
-.socialmedia ul {
+footer ul {
     list-style-type: none;
     display: flex;
 }
 
-.socialmedia ul li a img {
+footer ul li a img {
     width: 30px;
     height: auto;
     color: var(--color-text-background);
@@ -161,6 +161,6 @@ section h2 {
 
 footer p {
     padding: 20px 15px 10px 15px;
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid var(--accent2-color);
     text-align: left;
 }
