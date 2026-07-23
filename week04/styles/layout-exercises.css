@@ -24,32 +24,45 @@ div {
 .flex {
     background-color: #aba;
     /* write declarations here */
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
     background-color: #abb;
     /* enter declarations here */
+    display: grid;
+    place-items: center;
 
 }
 
 .container2 {
     /* write declarations here */
-
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
 
 .two {
     background-color: #ace;
     height: 100px;
+    width: 200px;
+    text-align: center;
 }
 
 .container3 {
     /* write declarations here */
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
 }
 
 .columns-3 {
     /* write declaration here */
+    grid-column: 1/4 ;
 
 }
 
