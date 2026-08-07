@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #681307;
+    --primary-color: #481100;
     --secondary-color: #ffffff;
     --accent1-color: #006080;
     --accent2-color: #000000;
@@ -219,6 +219,8 @@ section h2 {
     gap: 25px;
     border-top: 1px solid var(--accent2-color);
     position: relative;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .socialmedia {
@@ -238,3 +240,21 @@ section h2 {
     margin: 0 auto;
     text-align: center;
 }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.location img {
+    width: 300px;
+}
+
+.custom-google-map {
+    border: 0;
+}
+
+.custom-google-map {
+    border: 2px solid #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
