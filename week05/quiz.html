@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Form</title>
+    <meta name="description" content="This is a new HTML file that is a quiz form.">
+    <meta name="author" content="Ignacio Sanchez">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Basic HTML and CSS Quiz</h1>
+        <form action="">
+
+            <div class="form-item">
+                <label for="q1"><span>1.</span>What does the acronym CSS stand for?</label>
+                <input type="text" name="q1" id="q1">
+            </div>
+
+
+            <div class="form-item">
+                <label for="q2"><span>2.</span> How are id and class attributes selected in
+                    CSS?</label>
+                <textarea name="q2" id="q2"></textarea>
+            </div>
+
+
+            <div class="form-item">
+                <label for="q3"><span>3.</span>Which of the following is a valid CSS
+                    comment?</label>
+                <select name="q3" id="q3">
+                    <!--the first option to be labeled and non-selectable-->
+                    <option value="" selected disabled>Choose One...</option>
+                    <option value="">/*comment*/</option>
+                    <option value="">&lt;!--comment--&gt;</option>
+                    <option value="">#comment</option>
+                </select>
+            </div>
+
+
+            <div class="form-item">
+                <label for="q4"><span>4.</span>What is the bottom margin given this
+                    declaration?</label>
+                <img src="images/margin.jpg" alt="CSS margin: 10px 5px 15px;">
+                <input type="number" name="q4" id="q4">
+            </div>
+
+
+            <div class="button">
+                <button type="submit">Submit Quiz</button>
+            </div>
+
+        </form>
+    </main>
+
+
+    <footer>
+        <p>Copyright &copy; 2026 | HTML FORM - Quiz Form | Ignacio Sanchez &#10070;</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #ffffff;
+    --color--tittle-text: #000080;
+    --background-color-form: #eeeeee;
+    --border-color-form: 1px solid #cfcfcf;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    text-align: center;
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1,
+span {
+    color: var(--color--tittle-text);
+    font-weight: 700;
+}
+
+h1 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: Rockwell Light;
+    letter-spacing: 2px;
+}
+
+form {
+    width: 650px;
+    margin: 1px auto;
+    padding: 3rem 2rem;
+    border: var(--border-color-form);
+    border-radius: 0.5rem;
+    background-color: var(--background-color-form);
+    display: grid;
+    gap: .5rem;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0 15px 0;
+}
+
+label {
+    margin-top: 5px;
+}
+
+input,
+button,
+select,
+textarea {
+    display: grid;
+    align-items: center;
+    width: 1fr;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 6rem;
+}
+
+img {
+    width: 180px;
+    height: auto;
+    margin-top: 5px;
+}
+
+button {
+    margin: 1rem 0 0 0;
+    background-color: var(--color--tittle-text);
+    color: var(--background-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color--tittle-text);
+    border-top: var(--border-color-form);
+    border-bottom: var(--border-color-form);
+}
+
+footer p {
+    padding: 1rem;
+}
+
+.form-item,
+.button,
+.img {
+    display: grid;
+    align-items: center;
+}

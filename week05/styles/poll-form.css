@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #ffffff;
+    --color--tittle-text: #000080;
+    --background-color-form: #eeeeee;
+    --border-color-form: 1px solid #cfcfcf;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    text-align: center;
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1,
+legend {
+    color: var(--color--tittle-text);
+}
+
+h1 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: Rockwell Light;
+    letter-spacing: 2px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: var(--border-color-form);
+    border-radius: 0.5rem;
+    background-color: var(--background-color-form);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: var(--border-color-form);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: "Roboto";
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--color--tittle-text);
+    color: var(--background-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.button {
+    text-align: center;
+}
+
+footer {
+    margin: 1rem auto;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    border-top: var(--border-color-form);
+}
+
+footer p {
+    padding: 1rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3f 1f;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.column2 label {
+    margin: 0 1rem;
+    text-align: right;
+}
+
+select {
+    width: 100px;
+}
+
+.nextto {
+    display: flex;
+}
+
+.column1 label {
+    margin: 0 1rem;
+    text-align: center;
+    margin: 10px 5px 15px;
+
+}
