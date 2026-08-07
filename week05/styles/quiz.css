@@ -6,7 +6,7 @@
 
 :root {
     --background-color: #ffffff;
-    --color--tittle-text: #000080;
+    --color--tittle-text: #800000;
     --background-color-form: #eeeeee;
     --border-color-form: 1px solid #cfcfcf;
 }
@@ -14,7 +14,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    color: #333;
+    color: black;
     background: #fff;
 }
 
