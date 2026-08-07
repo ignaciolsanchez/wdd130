@@ -68,7 +68,6 @@ select,
 textarea {
     display: grid;
     align-items: center;
-    width: 1fr;
 }
 
 input,
