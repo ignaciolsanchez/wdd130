@@ -243,10 +243,6 @@ section h2 {
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.location img {
-    width: 300px;
-}
-
 .custom-google-map {
     border: 2px solid var(--accent2-colo);
     border-radius: 8px;
@@ -381,15 +377,18 @@ section h2 {
 .radio-group {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
 }
 
-.radio-group label {
+.radio-item {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.radio-item label {
     font-weight: normal;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .textarea-group {
@@ -413,14 +412,11 @@ section h2 {
 }
 
 .checkbox-group {
-    margin-bottom: 16px;
-}
-
-.checkbox-group label {
     display: flex;
     align-items: center;
     gap: 8px;
     font-weight: normal;
+    margin-bottom: 16px;
 }
 
 .submit-btn {
