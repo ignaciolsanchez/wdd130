@@ -70,15 +70,14 @@
                             <td class="label-column"><label>Message Purpose</label></td>
                             <td class="input-column">
                                 <div class="radio-group">
-                                    <label><input type="radio" name="purpose" value="general">
-                                        General
-                                        Inquiry</label>
-                                    <label><input type="radio" name="purpose" value="reservation">
-                                        Reservation
-                                        Question</label>
-                                    <label><input type="radio" name="purpose" value="suggestion">
-                                        Website
-                                        Suggestion</label>
+                                    <input type="radio" id="purpose" name="purpose" value="general">
+                                    <label for="purpose">General Inquiry</label>
+                                    <input type="radio" name="purpose" id="purpose"
+                                      value="reservation">
+                                    <label for="purpose">Reservation Question</label>
+                                    <input type="radio" name="purpose" id="purpose"
+                                      value="suggestion">
+                                    <label for="purpose">Website Suggestion</label>
                                 </div>
                             </td>
                         </tr>
@@ -86,18 +85,15 @@
 
                     <div class="textarea-group">
                         <label for="message">Message</label>
-                        <textarea id="message" placeholder="Type here"></textarea>
+                        <textarea id="message" name="message" placeholder="Type here"></textarea>
                     </div>
 
                     <div class="checkbox-group">
-                        <label>
-                            <input type="checkbox">
-                            Please Subscribe me to the monthly newsletter
-                        </label>
+                        <input type="checkbox" name="subscribe" id="subscribe">
+                        <label id="subscribe">Please Subscribe me to the monthly newsletter</label>
                     </div>
 
                     <button type="submit" class="submit-btn">Get in Touch!</button>
-
                 </form>
             </section>
         </div>
