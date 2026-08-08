@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - White Water Rafting</title>
     <meta name="description"
-      content="Contact Us site - White Water Rafting - We provide you with our social media and company information.">
+      content="Contact Us site - Provides contact information and a form to obtain user input including questions and comments.">
     <meta name="author" content="Ignacio Leonel Sanchez">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -24,115 +24,117 @@
         </nav>
     </header>
 
-    <main>
-        <section class="company-info">
-            <h1>White Water Rafting Company</h1>
-            <div class="contact-row">
-                <div>
-                    <p>123 Main River Street</p>
-                    <p>Kolob, California</p>
-                </div>
-                <div>
-                    <p>+1 999 999 9999</p>
-                    <p>info@whitewater.com</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="contact-columns">
-            <section class="location">
-                <div class="map-box">
-                    <iframe class="custom-google-map"
-                      src="https://www.google.com/maps?q=Whitewater+Challengers,+18013+NY-12F,+Dexter,+NY+13634&output=embed"
-                      width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
-
+    <main class="hero-main-contact">
+        <div class="hero-content-contact">
+            <section class="company-info">
+                <h1>White Water Rafting Company</h1>
+                <div class="contact-row">
+                    <div>
+                        <p>123 Main River Street</p>
+                        <p>Kolob, California</p>
+                    </div>
+                    <div>
+                        <p>+1 999 999 9999</p>
+                        <p>info@whitewater.com</p>
+                    </div>
                 </div>
             </section>
 
-
-            <section class="data-entry">
-                <form class="contact-form">
-
-                    <table class="form-table">
-                        <tr>
-                            <td class="label-column"><label for="name">Name</label></td>
-                            <td class="input-column"><input type="text" id="name" name="name"
-                                  placeholder="Full name"></td>
-                        </tr>
-
-                        <tr>
-                            <td class="label-column"><label for="email">Email</label></td>
-                            <td class="input-column"><input type="email" id="email" name="email"
-                                  placeholder="Email address"></td>
-                        </tr>
-
-                        <tr>
-                            <td class="label-column"><label>Message Purpose</label></td>
-                            <td class="input-column">
-
-                                <div class="radio-group">
-                                    <div class="radio-item">
-                                        <input type="radio" id="general" name="purpose"
-                                          value="general">
-                                        <label for="general">General Inquiry</label>
-                                    </div>
-
-                                    <div class="radio-item">
-                                        <input type="radio" name="purpose" id="reservation"
-                                          value="reservation">
-                                        <label for="reservation">Reservation Question</label>
-                                    </div>
-
-                                    <div class="radio-item">
-                                        <input type="radio" name="purpose" id="suggestion"
-                                          value="suggestion">
-                                        <label for="suggestion">Website Suggestion</label>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-
-                    <div class="textarea-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Type here"></textarea>
+            <div class="contact-columns">
+                <section class="location">
+                    <div class="map-box">
+                        <iframe class="custom-google-map"
+                          src="https://www.google.com/maps?q=Whitewater+Challengers,+18013+NY-12F,+Dexter,+NY+13634&output=embed"
+                          width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
                     </div>
+                </section>
 
-                    <div class="checkbox-group">
-                        <input type="checkbox" name="subscribe" id="subscribe">
-                        <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
-                    </div>
 
-                    <button type="submit" class="submit-btn">Get in Touch!</button>
-                </form>
+                <section class="data-entry">
+                    <form class="contact-form">
+
+                        <table class="form-table">
+                            <tr>
+                                <td class="label-column"><label for="name">Name</label></td>
+                                <td class="input-column"><input type="text" id="name" name="name"
+                                      placeholder="Full name"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="label-column"><label for="email">Email</label></td>
+                                <td class="input-column"><input type="email" id="email" name="email"
+                                      placeholder="Email address"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="label-column"><label>Message Purpose</label></td>
+                                <td class="input-column">
+
+                                    <div class="radio-group">
+                                        <div class="radio-item">
+                                            <input type="radio" id="general" name="purpose"
+                                              value="general">
+                                            <label for="general">General Inquiry</label>
+                                        </div>
+
+                                        <div class="radio-item">
+                                            <input type="radio" name="purpose" id="reservation"
+                                              value="reservation">
+                                            <label for="reservation">Reservation Question</label>
+                                        </div>
+
+                                        <div class="radio-item">
+                                            <input type="radio" name="purpose" id="suggestion"
+                                              value="suggestion">
+                                            <label for="suggestion">Website Suggestion</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="textarea-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                              placeholder="Type here"></textarea>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="subscribe" id="subscribe">
+                            <label for="subscribe">Subscribe me to the monthly
+                                newsletter</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Get in Touch!</button>
+                    </form>
+                </section>
+            </div>
+
+
+            <section class="galeria-adventure-grid">
+                <h2>We Are Here to Serve You</h2>
+                <figure class="landscape-photo">
+                    <figcaption class="contact"></figcaption>
+                </figure>
+                <figure class="landscape-photo">
+                    <img src="images/employee-profile-two.jpg" alt="Employee Profile girl Liz">
+                    <figcaption class="contact">Lizeth Belen</figcaption>
+                </figure>
+
+                <figure class="landscape-photo">
+                    <img src="images/employee-profile-one.jpg" alt="Employee Profile boy Igna">
+                    <figcaption class="contact">Ignacio Sanchez</figcaption>
+                </figure>
+
+                <figure class="landscape-photo">
+                    <img src="images/employee-profile-three.jpg" alt="Employee Profile girl Xime">
+                    <figcaption class="contact">Ximena Evelyn</figcaption>
+                </figure>
+                <figure class="landscape-photo">
+                    <figcaption class="contact"></figcaption>
+                </figure>
             </section>
         </div>
-
-
-        <section class="galeria-adventure-grid">
-            <h2>We Are Here to Serve You</h2>
-            <figure class="landscape-photo">
-                <figcaption></figcaption>
-            </figure>
-            <figure class="landscape-photo">
-                <img src="images/employee-profile-two.jpg" alt="Employee Profile girl Liz">
-                <figcaption>Lizeth Belen</figcaption>
-            </figure>
-
-            <figure class="landscape-photo">
-                <img src="images/employee-profile-one.jpg" alt="Employee Profile boy Igna">
-                <figcaption>Ignacio Sanchez</figcaption>
-            </figure>
-
-            <figure class="landscape-photo">
-                <img src="images/employee-profile-three.jpg" alt="Employee Profile girl Xime">
-                <figcaption>Ximena Evelyn</figcaption>
-            </figure>
-            <figure class="landscape-photo">
-                <figcaption></figcaption>
-            </figure>
-        </section>
-
     </main>
 
 
