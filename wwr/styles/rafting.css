@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #481100;
+    --primary-color: #420000;
     --secondary-color: #ffffff;
     --accent1-color: #006080;
     --accent2-color: #000000;
@@ -16,18 +16,19 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #caf0fd;
 }
 
 header main footer {
     width: 840px;
     margin: 0 auto;
-    gap: 10px;
 }
 
-h1,
+.hero h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
+    font-weight: bold;
 }
 
 nav,
@@ -51,14 +52,12 @@ header {
     height: auto;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    position: fixed;
     align-items: center;
     padding: 5px 20px;
     z-index: 100;
     display: grid;
     grid-template-columns: 3fr 6fr;
     max-width: 100%;
-
 }
 
 header img {
@@ -161,7 +160,7 @@ section h2 {
     height: auto;
     border: 1px solid var(--accent2-color);
     padding: 16px;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     color: var(--secondary-color);
 }
 
@@ -183,6 +182,7 @@ section h2 {
 .galeria-adventure-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
     gap: 20px;
     padding: 40px 20px;
 }
@@ -258,3 +258,186 @@ section h2 {
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Contact Page — Company Info */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.company-info {
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.company-info h1 {
+    top: 130px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font)
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Here starts Contact Page                                                                             */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contact-columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-columns .data-entry {
+    flex: 1;
+    min-width: 300px;
+    padding: 0;
+}
+
+.contact-columns .location {
+    flex: 1;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.contact-columns .contact-form {
+    margin: 0;
+    max-width: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Contact Page — Location / Map                                                                                                          */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.location {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.map-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.map-box .custom-google-map {
+    width: 100%;
+    height: 380px;
+    display: block;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Contact Page — Form                                                                                                                    */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.data-entry {
+    padding: 32px 16px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.form-table td {
+    padding: 8px 4px;
+    vertical-align: top;
+}
+
+.label-column {
+    width: 130px;
+    font-weight: bold;
+    color: var(--accent1-color);
+    padding-top: 16px;
+}
+
+.input-column input[type="text"],
+.input-column input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--accent2-color);
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+}
+
+.input-column input::placeholder {
+    color: #999;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    color: var(--accent2-color);
+}
+
+.textarea-group {
+    margin-bottom: 16px;
+}
+
+.textarea-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.textarea-group textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid var(--accent2-color);
+    font-family: var(--body-font);
+    resize: vertical;
+}
+
+.checkbox-group {
+    margin-bottom: 16px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent1-color);
+}
