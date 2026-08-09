@@ -19,11 +19,6 @@ body {
     background-color: #caf0fd;
 }
 
-header main footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
 .hero h1,
 .heroh2 {
     font-family: var(--heading-font);
@@ -78,7 +73,6 @@ header nav {
     height: auto;
     margin: 0;
     padding: 0;
-
 }
 
 header ul {
@@ -449,4 +443,264 @@ section h2 {
 
 .submit-btn:hover {
     background-color: var(--accent1-color);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Home Page — Hero                                                                                                                        */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.hero-content-home {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--accent2-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("../images/wwr-homepage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content-home h1 {
+    max-width: 640px;
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    line-height: 1.15;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Home Page — Weekly News signup card + intro paragraph                                                                                  */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.hero-home-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.weekly-news-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 420px;
+    margin: 0;
+    padding: 24px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.weekly-news-form h2 {
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 8px;
+    color: var(--accent2-color);
+    font-size: 1.5rem;
+}
+
+.form-table-home {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table-home td,
+.form-table-home th {
+    padding: 6px 0;
+    text-align: left;
+}
+
+.form-table-home p {
+    margin: 0 0 12px;
+    padding: 0;
+    color: var(--accent2-color);
+    font-size: 0.9rem;
+}
+
+.label-column-form {
+    /* Labels are marked visually-hidden by design */
+    display: none;
+}
+
+.input-column-form input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--accent2-color);
+    font-family: var(--body-font);
+}
+
+.form-table-home .submit-btn {
+    width: auto;
+    padding: 10px 28px;
+    margin-top: 8px;
+}
+
+.form-table-home .name-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-table-home .name-row .input-column-form {
+    flex: 1;
+}
+
+.signup-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent1-color);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.weekly-news-paragraphs {
+    flex: 2;
+    min-width: 300px;
+    margin: 0;
+    padding: 24px;
+}
+
+.weekly-news-paragraphs p {
+    margin: 0 0 16px;
+    padding: 0;
+    color: var(--accent2-color);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Home Page — Popular trips carousel                                                                                                      */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.popular-rafting-trips {
+    width: 100%;
+    flex: 1 1 100%;
+    background-color: #005611;
+    padding: 30px 20px;
+}
+
+.popular-rafting-trips h2 {
+    text-align: center;
+    background: none;
+    border: none;
+    padding: 0 0 8px;
+    color: var(--secondary-color);
+}
+
+.popular-rafting-trips nav {
+    text-align: center;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.trips-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.trip-photo {
+    flex: 0 0 240px;
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+.trip-photo img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.trip-photo figcaption {
+    padding: 10px 12px 0;
+    font-weight: bold;
+    color: var(--accent2-color);
+}
+
+.trip-photo p {
+    margin: 4px 12px 10px;
+    padding: 0;
+    font-size: 0.85rem;
+    color: var(--accent2-color);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Home Page — "Adventure is in Our Roots"                                                                                  */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.our-roots {
+    flex: 1 1 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 40px 20px;
+}
+
+.our-roots h2 {
+    grid-column: 1 / -1;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0 0 16px;
+    color: var(--secondary-color);
+}
+
+.our-roots > div {
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 16px;
+}
+
+.our-roots h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-bottom: 6px;
+}
+
+.our-roots p {
+    margin: 0;
+    padding: 0;
+    color: #cccccc;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Home Page — Testimonials                                                                                                                */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.testimonials-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 100%;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.testimonial-photo {
+    flex: 0 1 220px;
+    margin: 0;
+}
+
+.testimonial-photo img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.testimonial-photo p {
+    margin: 10px 0 4px;
+    padding: 0;
+    font-style: italic;
+    color: var(--accent2-color);
+}
+
+.testimonial-photo .testimonial {
+    font-weight: bold;
+    color: var(--accent1-color);
 }
