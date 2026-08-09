@@ -16,11 +16,11 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #caf0fd;
+    background-color: #d3f3fd;
 }
 
 .hero h1,
-.heroh2 {
+.hero h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     font-weight: bold;
@@ -201,6 +201,7 @@ section h2 {
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
+    color: var(--accent2-color);
 }
 
 .landscape-photo .contact {
@@ -255,9 +256,9 @@ section h2 {
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .custom-google-map {
-    border: 2px solid var(--accent2-colo);
+    border: 2px solid var(--accent2-color);
     border-radius: 8px;
-    box-shadow: 0 4px 8px var(--accent2-colo);
+    box-shadow: 0 4px 8px var(--accent2-color);
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -337,8 +338,9 @@ section h2 {
 
 .map-box .custom-google-map {
     width: 100%;
-    height: 380px;
+    height: 447px;
     display: block;
+    border: 2px solid var(--accent2-color);
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -458,7 +460,7 @@ section h2 {
     align-items: flex-end;
     background-color: var(--accent2-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-        url("../images/wwr-homepage.jpg");
+        url("../images/wwr-homepage-small.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -524,7 +526,8 @@ section h2 {
     font-size: 0.9rem;
 }
 
-.label-column-form {
+.label-column-form,
+.visually-hidden {
     /* Labels are marked visually-hidden by design */
     display: none;
 }
@@ -605,7 +608,7 @@ section h2 {
 }
 
 .trip-photo {
-    flex: 0 0 240px;
+    flex: 0 0 300px;
     margin: 0;
     background-color: var(--secondary-color);
 }
@@ -620,6 +623,7 @@ section h2 {
     padding: 10px 12px 0;
     font-weight: bold;
     color: var(--accent2-color);
+    margin-bottom: 1rem;
 }
 
 .trip-photo p {
