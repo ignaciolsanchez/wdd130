@@ -242,7 +242,7 @@ section h2 {
 }
 
 .hero-main-contact {
-    background-image: url("../images/hero-aman-upadhyay-unsplash-small.jpg");
+    background-image: url("../images/hero-aman-upadhyay-unsplash-small.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -259,6 +259,7 @@ section h2 {
     border: 2px solid var(--accent2-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--accent2-color);
+    object-fit: cover;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
